@@ -22,7 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 * Migration instructions
 * Microposts instructions
-* deploy instructions
+* deploy instruction
 
 
 * ...
