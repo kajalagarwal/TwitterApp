@@ -11,7 +11,7 @@
       </h1>
     </section>
     <section>
-    	<%= link_to "Go to #{@user.name}'s home page", root_path,
+    	<%= link_to "Go to #{current_user.name}'s home page", root_path,
                                 class: "btn-primary" %>
     </section>
   </aside>
