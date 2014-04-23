@@ -4,12 +4,14 @@
   <aside class="span4">
     <section>
       <h1>
+        
         <%= gravatar_for @user %>
-        <%= @user.name %>
+        <em><%= @user.name %></em><br>
+        <em><%= "Age:#{Random.rand(20..40) }years" %></em>
       </h1>
     </section>
     <section>
-    	<%= link_to "Go to your home page", root_path,
+    	<%= link_to "Go to #{@user.name}'s home page", root_path,
                                 class: "btn-primary" %>
     </section>
   </aside>
