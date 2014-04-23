@@ -1,11 +1,16 @@
 <% provide(:title, @user.name) %>
 <div class="row">
+  <h1><b>Profile Page</b></h1>
   <aside class="span4">
     <section>
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+    </section>
+    <section>
+    	<%= link_to "Go to your home page", root_path,
+                                class: "btn-primary" %>
     </section>
   </aside>
    <div class="span8">

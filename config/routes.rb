@@ -10,6 +10,9 @@ SampleApp1::Application.routes.draw do
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
    match '/signout', to: 'sessions#destroy',     via: 'delete'
+   match '/', to: 'users#new', via: 'get'
+   #match '/users/new', to: 'static_pages#home',     via: 'get'
+   #match '/', to: 'users#show', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
